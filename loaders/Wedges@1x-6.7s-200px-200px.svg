@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="154" height="154" style="shape-rendering: auto; display: block; background: rgba(255, 255, 255, 0);" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g transform="translate(50 50)">
+  <g transform="scale(0.7)">
+    <g transform="translate(-50 -50)">
+      <g>
+        <animateTransform dur="1.6666666666666665s" keyTimes="0;1" values="0 50 50;360 50 50" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform>
+        <path d="M50 50L50 0A50 50 0 0 1 100 50Z" fill="#d53e4f" fill-opacity="1"></path>
+      </g>
+      <g>
+        <animateTransform dur="2.222222222222222s" keyTimes="0;1" values="0 50 50;360 50 50" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform>
+        <path transform="rotate(90 50 50)" d="M50 50L50 0A50 50 0 0 1 100 50Z" fill="#f46d43" fill-opacity="1"></path>
+      </g>
+      <g>
+        <animateTransform dur="3.333333333333333s" keyTimes="0;1" values="0 50 50;360 50 50" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform>
+        <path transform="rotate(180 50 50)" d="M50 50L50 0A50 50 0 0 1 100 50Z" fill="#fdae61" fill-opacity="1"></path>
+      </g>
+      <g>
+        <animateTransform dur="6.666666666666666s" keyTimes="0;1" values="0 50 50;360 50 50" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform>
+        <path transform="rotate(270 50 50)" d="M50 50L50 0A50 50 0 0 1 100 50Z" fill="#fee08b" fill-opacity="1"></path>
+      </g>
+    </g>
+  </g>
+</g><g></g></g><!-- ZAMPTO --></svg>

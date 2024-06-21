@@ -1,0 +1,62 @@
+<style>
+    .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 230, 230, 0.473);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .loader {
+    width: 50px;
+    height: 50px;
+    }
+    </style> 
+    
+    <div class="overlay" id="overlay">
+                <img class="loader" src="https://raw.githubusercontent.com/AlessandroMglx/cdn/main/zampto/current/loader.svg" alt="Loading Animation">
+            </div>
+    
+            <script>
+            function showOverlay() {
+                var overlay = document.getElementById('overlay');
+                overlay.style.display = 'flex';
+            }
+    
+            function redirectTo(url) {
+                showOverlay();
+                setTimeout(function() {
+                    window.location.href = url;
+                }, 1000);
+            }
+    
+            document.addEventListener('click', function(event) {
+                var target = event.target;
+    
+                if (target.tagName === 'BUTTON' && target.getAttribute('onclick')) {
+                    var url = target.getAttribute('onclick').match(/window\.location\.href='(.*?)'/)[1];
+    
+                    if (url) {
+                        event.preventDefault();
+                        redirectTo(url);
+                    }
+                }
+            });
+    
+            document.addEventListener('submit', function(event) {
+                var form = event.target;
+    
+                if (form.tagName === 'FORM') {
+                    event.preventDefault();
+                    showOverlay();
+                    setTimeout(function() {
+                        form.submit();
+                    }, 1000);
+                }
+            });
+            </script>
