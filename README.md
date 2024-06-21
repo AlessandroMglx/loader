@@ -4,3 +4,5 @@ Custom Loader using HTML, CSS and JS
 ## This system was developed and is updated to work with Zampto systems
 
 zampto.net
+
+Contact: DISCORD USERNAME alem_x
